@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+  
   <nav class="navbar navbar-expand-lg navbar-light px-5 px-xl-6">
     <div class="container-fluid py-lg-4 py-3 justify-content-between">
         
@@ -21,7 +21,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end menu-principal" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" href="#">FEATURES</a>
           <a class="nav-link ms-3" href="#">PRICING</a>
@@ -62,17 +62,17 @@
     </div>
 
     <div>
-      <ul class="nav nav-tabs justify-content-center flex-column flex-lg-row text-center px-5" id="myTab" role="tablist">
+      <ul class="nav nav-tabs justify-content-center flex-column flex-lg-row text-center px-5 mb-0 mb-lg-4" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <a class="nav-link active nav-1 p-3" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home"
+            <a class="nav-link active nav-1 p-3 py-lg-4 px-lg-5" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home"
                 aria-selected="true">Simple Bookmarking</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link p-3" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            <a class="nav-link p-3 py-lg-4 px-lg-5" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile"
                 aria-selected="false">Speedy Searching</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link p-3" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            <a class="nav-link p-3 py-lg-4 px-lg-5" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact"
                 aria-selected="false">Easy Sharing</a>
         </li>
       </ul>
@@ -140,7 +140,7 @@
 
     <div class="container-fluid px-5 d-flex justify-content-center flex-wrap flex-lg-nowrap" style="min-height: 26rem">
 
-      <div class="card shadow border-0 align-self-start">
+      <div class="card shadow border-0">
         <div class="card-body text-center px-4">
           <img src="./Imagenes/logo-chrome.svg" class="img px-5 py-4" alt="Logo navegador Chrome">
           <h5 class="card-title">Add to Chrome</h5>
@@ -151,7 +151,7 @@
         </div>
       </div>
 
-      <div class="card border-0 shadow align-self-center mx-o mx-lg-5 my-5 my-lg-0">
+      <div class="card border-0 shadow mx-o mx-lg-5 my-5 my-lg-0">
         <div class="card-body text-center px-4">
           <img src="./Imagenes/logo-firefox.svg" class="img px-5 py-4" alt="Logo navegador Firefox">
           <h5 class="card-title">Add to Firefox</h5>
@@ -162,7 +162,7 @@
         </div>
       </div>
 
-      <div class="card border-0 shadow align-self-end">
+      <div class="card border-0 shadow">
         <div class="card-body text-center px-4">
           <img src="./Imagenes/logo-opera.svg" class="img px-5 py-4" alt="Logo navegador Opera">
           <h5 class="card-title">Add to Opera</h5>
@@ -218,12 +218,12 @@
       </div>
 
       <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed ps-0 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed ps-0 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
             What abot other Chromium browsers?
           </button>
         </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
         </div>
       </div>
@@ -242,11 +242,18 @@
         <h2 class="h2 text-white mb-4">Stay up-to-date with what<br>we're doing</h2>
       </div>
       
-      <form class="d-flex justify-content-center flex-column flex-lg-row">
-          <input type="email" class="form-control me-0 me-lg-3 mb-3 mb-lg-0 p-3 p-lg-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+      <form class="d-flex justify-content-center flex-column flex-lg-row needs-validation" novalidate>
+          
+        <div class="me-0 me-lg-3 mb-3 mb-lg-0" style="min-width: 18rem"><input type="email" class="form-control p-3 p-lg-2 position-relative"
+          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+            <div class="invalid-feedback rounded px-2 aviso">
+            whoops, make sure it's an email
+            </div>
+          </div>
           <button type="submit" class="btn btn-secondary text-white p-3 p-lg-2">Contact us</button>
       </form>  
     </div>
+
   </section>
 
     <nav class="navbar navbar-expand-lg bg-dark px-5 px-xl-6">
@@ -257,10 +264,10 @@
             <img src="./Imagenes/logo-bookmark.svg" alt="logo Bookmark" class="d-inline-block align-text-top">
           </a>
     
-          <div class="navbar-nav text-center">
-            <a class="nav-link ms-lg-3 ms-0 text-white" href="#">FEATURES</a>
-            <a class="nav-link ms-lg-3 ms-0 text-white" href="#">PRICING</a>
-            <a class="nav-link ms-lg-3 ms-0 text-white" href="#">CONTACT</a>
+          <div class="navbar-nav navbar-dark text-center">
+            <a class="nav-link ms-lg-3 ms-0" href="#">FEATURES</a>
+            <a class="nav-link ms-lg-3 ms-0" href="#">PRICING</a>
+            <a class="nav-link ms-lg-3 ms-0" href="#">CONTACT</a>
           </div>
         </div>
 
@@ -275,11 +282,32 @@
 
       </div>
     </nav>
-
-
   </section>
 </footer>
 
+
+<script>
+  // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+(function () {
+  'use strict'
+
+  // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Bucle sobre ellos y evitar el envío
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
