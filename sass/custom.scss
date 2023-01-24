@@ -2,7 +2,9 @@
 
 $primary: #5265E1;
 $secondary: #FA5959;
-$light: #ededed;
+$light: #e1e1e1;
+$dark: #252d61;
+
 $gray: rgba(0, 0, 0, 0.5);
 
 //CONTENEDORES
@@ -127,14 +129,14 @@ $nav-tabs-link-active-color: black;
 .btn {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.185);
 
-  @media (max-width: 560px) {
+  @media (max-width: 990px) {
     font: {
       size: $base !important;
       weight: $w-grueso !important;
     }
   }
 
-  @media (min-width: 561px) {
+  @media (min-width: 991px) {
     font: {
       size: $pequeña !important;
       weight: $w-grueso !important;
@@ -170,6 +172,20 @@ $nav-tabs-link-active-color: black;
 //FAQs
 
 $accordion-button-icon: url('../Imagenes/icon-arrow.svg');
+
+
+//INPUT
+
+$input-placeholder-color: $light;
+.form-control {
+  @media (max-width: 990px) {
+    width: 100vw;
+  }
+
+  @media (min-width: 991px) {
+    max-width: 16rem;
+  }
+}
 
 
 
